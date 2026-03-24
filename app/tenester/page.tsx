@@ -27,15 +27,17 @@ export default function TenesterPage() {
 
       <section className="section" aria-label="Oversikt over tenester">
         <div className="container-inner">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {servicesData.map(({ id, title, img, imgAlt, description, price }) => (
-              <article key={id} className="card flex flex-col sm:flex-row gap-6 border border-brand-100">
+          <p className="text-dark/60 mb-8">
+            Pris vert avtalt basert på behov og omfang.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-stretch">
+            {servicesData.map(({ id, title, img, imgAlt, description }) => (
+              <article key={id} className="card h-full flex flex-col sm:flex-row gap-6 border border-brand-100">
                 <div className="flex-shrink-0 flex items-center justify-center w-full sm:w-40 h-40 rounded-2xl bg-brand-50 overflow-hidden">
                   <Image src={img} alt={imgAlt} width={140} height={140} className="object-contain p-3" />
                 </div>
                 <div className="flex flex-col justify-center">
-                  <h2 className="text-xl font-bold text-brand-600 mb-1">{title}</h2>
-                  <p className="text-sm font-semibold text-brand-400 mb-3">{price}</p>
+                  <h2 className="text-xl font-bold text-brand-600 mb-2">{title}</h2>
                   <p className="text-dark/70 leading-relaxed">{description}</p>
                 </div>
               </article>

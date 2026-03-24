@@ -24,20 +24,14 @@ export default function OmPage() {
       <section className="section" aria-labelledby="story-heading">
         <div className="container-inner">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
-            {/* Portrait – padding reserves space for the decorative square */}
-            <div className="relative pb-5 pr-5">
-              <div className="rounded-3xl overflow-hidden shadow-lg aspect-[4/5] bg-brand-100 relative">
-                <Image
-                  src="/images/bente-ardalshjelpen.avif"
-                  alt="Portrett av eigar av Ardalshjelpen"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                />
-              </div>
-              <div
-                className="absolute bottom-0 right-0 w-28 h-28 rounded-3xl bg-brand-300 -z-10"
-                aria-hidden="true"
+            {/* Portrait */}
+            <div className="relative h-[400px] overflow-hidden rounded-xl shadow-lg bg-brand-100">
+              <Image
+                src="/images/bente-ardalshjelpen.avif"
+                alt="Portrett av eigar av Ardalshjelpen"
+                fill
+                className="object-cover rounded-xl"
+                priority
               />
             </div>
 

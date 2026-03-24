@@ -74,10 +74,20 @@ export default function ServiceRequestForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       })
-      if (!res.ok) throw new Error()
+      if (!res.ok) {
+        let msg = 'Noko gjekk gale. Prøv igjen, eller kontakt oss direkte.'
+        try {
+          const json = await res.json()
+          if (json?.error) msg = json.error
+        } catch { /* ignore parse errors */ }
+        setError(msg)
+        return
+      }
+      setData(empty)
+      setStep(1)
       setSubmitted(true)
     } catch {
-      setError('Noko gjekk gale. Ring oss på 940 78 545 eller send e-post til post@ardalshjelpen.no.')
+      setError('Noko gjekk gale. Prøv igjen, eller kontakt oss direkte.')
     } finally {
       setLoading(false)
     }
@@ -89,7 +99,7 @@ export default function ServiceRequestForm() {
         <div className="w-16 h-16 rounded-full bg-brand-300 flex items-center justify-center mx-auto mb-6">
           <CheckIcon />
         </div>
-        <h2 className="text-2xl font-bold text-dark mb-3">Takk for forespurnaden!</h2>
+        <h2 className="text-2xl font-bold text-dark mb-3">Takk for førespurnaden!</h2>
         <p className="text-dark/70 max-w-md mx-auto">
           Me kjem att til deg så snart som mogleg — som regel innan ein kvardag.
         </p>
