@@ -66,7 +66,7 @@ export default function KontaktPage() {
           <p className="text-dark/70 text-lg mb-8 leading-relaxed">
             Bruk teneste-skjemaet vårt — vel teneste, skriv meldinga di og send i veg. Enkelt og raskt.
           </p>
-          <Link href="/tenester#bestill" className="btn-primary">
+          <Link href="/tenester#skjema" className="btn-primary">
             Gå til skjema
           </Link>
         </div>

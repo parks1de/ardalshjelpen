@@ -74,7 +74,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-16">
-            <Link href="/tenester" className="btn-primary text-xl px-12 py-5 shadow-lg">
+            <Link href="/tenester#skjema" className="btn-primary text-xl px-12 py-5 shadow-lg">
               Bestill tenester i dag!
             </Link>
           </div>
@@ -168,7 +168,7 @@ export default function HomePage() {
                 Noko utenom våre faste tenester det er ønskje å få hjelp med?
                 Fyll inn skjemaet og vel &quot;Andre&quot; blant tenestene!
               </p>
-              <Link href="/tenester" className="btn-primary">
+              <Link href="/tenester#skjema" className="btn-primary">
                 Send ein førespurnad
               </Link>
             </div>
@@ -184,9 +184,8 @@ const whyItems = [
     title: 'Lokalt og nært',
     body: 'Me kjenner lokalsamfunnet og er raskt på plass i Årdal, Lærdal og Kaupanger.',
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-        <circle cx="12" cy="10" r="3" />
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M20 6L9 17l-5-5" />
       </svg>
     ),
   },

@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     locale: 'nn_NO',
     type: 'website',
   },
+  icons: {
+    icon: '/favicon.ico',
+  }
   metadataBase: new URL('https://ardalshjelpen.no'),
 }
 

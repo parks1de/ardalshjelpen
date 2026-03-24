@@ -48,7 +48,7 @@ export default function Nav() {
             )
           })}
           <li className="ml-4">
-            <Link href="/tenester" className="btn-primary !py-2.5 !px-6 !text-base">
+            <Link href="/tenester#skjema" className="btn-primary !py-2.5 !px-6 !text-base">
               Bestill hjelp
             </Link>
           </li>
@@ -88,7 +88,7 @@ export default function Nav() {
               )
             })}
             <li className="mt-3">
-              <Link href="/tenester" onClick={() => setOpen(false)} className="btn-primary w-full !justify-center">
+              <Link href="/tenester#skjema" onClick={() => setOpen(false)} className="btn-primary w-full !justify-center">
                 Bestill hjelp
               </Link>
             </li>

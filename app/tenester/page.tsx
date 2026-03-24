@@ -46,7 +46,7 @@ export default function TenesterPage() {
         </div>
       </section>
 
-      <section className="section bg-white" id="bestill" aria-labelledby="form-heading">
+      <section className="section bg-white" id="skjema" aria-labelledby="form-heading">
         <div className="container-inner">
           <div className="text-center mb-12">
             <h2 id="form-heading" className="text-3xl md:text-4xl font-bold text-dark mb-4">
