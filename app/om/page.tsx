@@ -27,7 +27,7 @@ export default function OmPage() {
             {/* Portrait */}
             <div className="relative h-[400px] overflow-hidden rounded-xl shadow-lg bg-brand-100">
               <Image
-                src="/images/bente-ardalshjelpen.png"
+                src="/images/bente-ardalshjelpen.avif"
                 alt="Portrett av eigar av Ardalshjelpen"
                 fill
                 className="object-cover rounded-xl"
