@@ -25,7 +25,8 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: '/images/favicon.ico',
+    apple: '/images/apple-touch-icon.png',
   },
   metadataBase: new URL('https://ardalshjelpen.no'),
 }
