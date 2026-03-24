@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
     const { error } = await resend.emails.send({
       from: 'Årdalshjelpen <nettside@ardalshjelpen.no>',
       to: 'post@ardalshjelpen.no',
-      replyTo: email ? `${name} <${email}>` : undefined,
+      reply_to: email ? `${name} <${email}>` : undefined,
       subject: `Ny førespurnad – ${name}`,
       text: lines,
     })
