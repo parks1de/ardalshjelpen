@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #EEF5F4;
+  --brand: #9ECFCA;
+  --dark: #2D3748;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--dark);
+    font-size: 1.125rem;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  *:focus-visible {
+    outline: 3px solid #9ECFCA;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-300 px-8 py-4 text-white font-semibold text-lg tracking-wide transition-all duration-200 hover:bg-brand-400 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-300 focus-visible:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-brand-300 px-8 py-4 text-brand-600 font-semibold text-lg tracking-wide transition-all duration-200 hover:bg-brand-300 hover:text-white hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-300 focus-visible:ring-offset-2;
+  }
+
+  .card {
+    @apply rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow duration-200 p-8;
+  }
+
+  .section {
+    @apply py-16 md:py-24 px-4;
+  }
+
+  .container-inner {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border-2 border-brand-100 bg-white px-5 py-3.5 text-dark text-lg placeholder:text-gray-400 transition-colors duration-150 focus:border-brand-300 focus:outline-none focus:ring-0;
+  }
+
+  .label {
+    @apply block text-sm font-semibold text-dark mb-1.5 uppercase tracking-wide;
+  }
+}
+
+main {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

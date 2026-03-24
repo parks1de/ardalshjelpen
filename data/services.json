@@ -1,0 +1,34 @@
+[
+  {
+    "id": "husvask",
+    "title": "Husvask",
+    "price": "Pris etter avtale",
+    "description": "Vask av golv, bad, kjøkken, spegel, støvsuging av tepper, vaskar og på andre overflater, t.d. bord, glaskarmar, tv-benk o.l.",
+    "img": "/images/064-Laundry.svg",
+    "imgAlt": "Illustrasjon – husvask"
+  },
+  {
+    "id": "nedvask",
+    "title": "Nedvask",
+    "price": "Pris etter avtale",
+    "description": "Vask av golv, veggar, tak, møblar, bad, kjøkken, inni skap og vindausvask. Kan gjere nedvask på enkelt rom eller heile bustaden.",
+    "img": "/images/09-Cleaner.svg",
+    "imgAlt": "Illustrasjon – nedvask"
+  },
+  {
+    "id": "hjelp-heimen",
+    "title": "Hjelp i og utanfor heimen",
+    "price": "Pris etter avtale",
+    "description": "Hekk og plenklypping, snømaking og andre oppgåver i og rundt heimen. Me disponerer naudsynt utstyr.",
+    "img": "/images/146-Gardening.svg",
+    "imgAlt": "Illustrasjon – hagearbeid"
+  },
+  {
+    "id": "handletur",
+    "title": "Handletur",
+    "price": "Pris etter avtale",
+    "description": "Me handlar det du ønskjer, om det er mat, byggjevarer, møblar eller noko anna. Me leverer varene på døra.",
+    "img": "/images/23-Grocer.svg",
+    "imgAlt": "Illustrasjon – handletur"
+  }
+]
