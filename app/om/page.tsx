@@ -25,12 +25,13 @@ export default function OmPage() {
         <div className="container-inner">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
             {/* Portrait */}
-            <div className="relative h-[400px] overflow-hidden rounded-xl shadow-lg bg-brand-100">
+            <div className="relative w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/images/bente-ardalshjelpen.png.png"
+                src="/images/bente-ardalshjelpen.png"
                 alt="Portrett av eigar av Ardalshjelpen"
                 fill
-                className="object-cover rounded-xl"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-top"
                 priority
               />
             </div>
