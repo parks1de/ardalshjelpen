@@ -5,7 +5,7 @@ import servicesData from '@/data/services.json'
 
 export const metadata: Metadata = {
   title: 'Tenester',
-  description: 'Sjå kva Ardalshjelpen kan hjelpe deg med — husvask, nedvask, handletur, hagearbeid og meir. Bestill enkelt via skjema.',
+  description: 'Sjå kva Årdalshjelpen kan hjelpe deg med — husvask, nedvask, handletur, hagearbeid og meir. Bestill enkelt via skjema.',
 }
 
 export default function TenesterPage() {
@@ -17,7 +17,7 @@ export default function TenesterPage() {
             Tenester
           </h1>
           <p className="text-xl text-dark/70 max-w-2xl leading-relaxed">
-            Sjå og les om tenestene Ardalshjelpen kan levere for deg.
+            Sjå og les om tenestene Årdalshjelpen kan levere for deg.
           </p>
           <p className="text-dark/70 mt-3 max-w-xl leading-relaxed">
             Ønskje om spesifikke tenester som ikkje me har nemnt? Vel &quot;Andre&quot; blant tenestene når du fyller ut skjemaet under!
@@ -71,7 +71,7 @@ export default function TenesterPage() {
                 Andre oppgåver du treng hjelp til?
               </h2>
               <p className="text-dark/80 leading-relaxed">
-                Me er noko allsidige og har danna oss erfaring gjennom vår tid som Ardalshjelpen.
+                Me er noko allsidige og har danna oss erfaring gjennom vår tid som Årdalshjelpen.
                 Noko utenom våre faste tenester det er ønskje å få hjelp med?
                 Fyll inn skjemaet over, og vel &quot;Andre&quot; blant tenestene!
               </p>

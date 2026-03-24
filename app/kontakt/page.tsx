@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Kontakt',
-  description: 'Kontakt Ardalshjelpen via e-post eller telefon. Me er klare til å hjelpe deg.',
+  description: 'Kontakt Årdalshjelpen via e-post eller telefon. Me er klare til å hjelpe deg.',
 }
 
 export default function KontaktPage() {

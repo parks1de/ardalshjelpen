@@ -26,7 +26,7 @@ export default function Nav() {
       </a>
 
       <nav className="container-inner flex items-center justify-between h-20 px-4" aria-label="Hovudnavigasjon">
-        <Link href="/" aria-label="Heim – Ardalshjelpen">
+        <Link href="/" aria-label="Heim – Årdalshjelpen">
           <LogoFull height={32} />
         </Link>
 

@@ -30,7 +30,7 @@ export function LogoFull({ height = 36, className = '' }: { height?: number; cla
         style={{ fontSize: height * 0.47, letterSpacing: '0.12em', lineHeight: 1 }}
         className="font-bold text-dark uppercase"
       >
-        Ardalshjelpen
+        Årdalshjelpen
       </span>
     </span>
   )

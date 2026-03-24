@@ -85,7 +85,7 @@ export default function HomePage() {
       <section className="section bg-white" aria-labelledby="why-heading">
         <div className="container-inner">
           <h2 id="why-heading" className="text-3xl md:text-4xl font-bold text-brand-600 text-center mb-4">
-            Kvifor velje Ardalshjelpen?
+            Kvifor velje Årdalshjelpen?
           </h2>
           <p className="text-center text-dark/70 max-w-2xl mx-auto mb-14">
             Me er lokalt forankra og kjenner Årdal, Lærdal og Kaupanger. Tenestene er tilpassa deg — båe privatpersonar og verksemder.
@@ -111,7 +111,7 @@ export default function HomePage() {
             Kva kan me hjelpe med?
           </h2>
           <p className="text-center text-dark/70 max-w-xl mx-auto mb-14">
-            Sjå og les om tenestene Ardalshjelpen kan levere for deg.
+            Sjå og les om tenestene Årdalshjelpen kan levere for deg.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {servicesData.map(({ id, title, description, img, imgAlt, price }) => (
@@ -164,7 +164,7 @@ export default function HomePage() {
                 Andre oppgåver du treng hjelp til?
               </h2>
               <p className="text-dark/80 text-lg leading-relaxed mb-6">
-                Me er noko allsidige og har danna oss erfaring gjennom vår tid som Ardalshjelpen.
+                Me er noko allsidige og har danna oss erfaring gjennom vår tid som Årdalshjelpen.
                 Noko utenom våre faste tenester det er ønskje å få hjelp med?
                 Fyll inn skjemaet og vel &quot;Andre&quot; blant tenestene!
               </p>

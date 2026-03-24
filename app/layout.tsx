@@ -13,14 +13,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Ardalshjelpen – Hjelp i kvardagen',
-    template: '%s | Ardalshjelpen',
+    default: 'Årdalshjelpen – Hjelp i kvardagen',
+    template: '%s | Årdalshjelpen',
   },
   description:
-    'Ardalshjelpen leverer praktisk hjelp i kvardagen – husvask, handleturar, hagearbeid og mykje meir. Ring oss i dag.',
+    'Årdalshjelpen leverer praktisk hjelp i kvardagen – husvask, handleturar, hagearbeid og mykje meir. Ring oss i dag.',
   keywords: ['husvask', 'hjelp heime', 'handletur', 'Ardal', 'Laerdal', 'Kaupanger', 'praktisk hjelp'],
   openGraph: {
-    siteName: 'Ardalshjelpen',
+    siteName: 'Årdalshjelpen',
     locale: 'nn_NO',
     type: 'website',
   },

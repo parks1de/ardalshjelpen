@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Om oss',
-  description: 'Les om historia bak Ardalshjelpen — eit lokalt selskap med engasjement for å hjelpe folk i kvardagen.',
+  description: 'Les om historia bak Årdalshjelpen — eit lokalt selskap med engasjement for å hjelpe folk i kvardagen.',
 }
 
 export default function OmPage() {
@@ -25,10 +25,10 @@ export default function OmPage() {
         <div className="container-inner">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
             {/* Portrait */}
-            <div className="relative w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
+            <div className="relative w-full h-[460px] rounded-2xl overflow-hidden shadow-lg bg-brand-50">
               <Image
-                src="/images/bente-ardalshjelpen.png"
-                alt="Portrett av eigar av Ardalshjelpen"
+                src="/images/bente-ardalshjelpen.avif"
+                alt="Portrett av eigar av Årdalshjelpen"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover object-top"
@@ -38,11 +38,11 @@ export default function OmPage() {
 
             <div className="flex flex-col gap-6">
               <h2 id="story-heading" className="text-3xl font-bold text-dark">
-                Historia bak Ardalshjelpen
+                Historia bak Årdalshjelpen
               </h2>
               <div className="flex flex-col gap-4 text-dark/80 leading-relaxed text-lg">
                 <p>
-                  Ideen bak Ardalshjelpen byrja tidleg sommaren 2021. Og hausten same året blei me registrert som eit AS — planlegginga hadde blitt til ei bedrift.
+                  Ideen bak Årdalshjelpen byrja tidleg sommaren 2021. Og hausten same året blei me registrert som eit AS — planlegginga hadde blitt til ei bedrift.
                 </p>
                 <p>
                   Me er ei bedrift som spirar i frå Årdal med driftig engasjement, og har eit brennande hjarte for å hjelpa andre.

@@ -53,9 +53,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-brand-700 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-brand-300">
-          <p>Ardalshjelpen AS &mdash; Org.nr. 927 700 182</p>
+          <p>Årdalshjelpen AS &mdash; Org.nr. 927 700 182</p>
           <div className="flex flex-col items-center md:items-end gap-1">
-            <p>&copy; {new Date().getFullYear()} Ardalshjelpen</p>
+            <p>&copy; {new Date().getFullYear()} Årdalshjelpen</p>
             <a
               href="mailto:post@parkside.no"
               className="text-brand-500/70 hover:text-brand-400 transition-colors duration-150 text-xs"
