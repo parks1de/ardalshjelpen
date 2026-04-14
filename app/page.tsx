@@ -25,15 +25,15 @@ export default function HomePage() {
               <ul className="flex flex-col gap-4" role="list">
                 <li>
                   <a
-                    href="mailto:post@ardalshjelpen.no"
+                    href="mailto:ardalshjelpen@gmail.com"
                     className="flex items-center gap-4 group"
-                    aria-label="Send e-post til post@ardalshjelpen.no"
+                    aria-label="Send e-post til ardalshjelpen@gmail.com"
                   >
                     <span className="flex-shrink-0 w-11 h-11 rounded-full bg-brand-300 flex items-center justify-center text-white shadow group-hover:bg-brand-400 transition-colors">
                       <EmailIcon />
                     </span>
                     <span className="text-dark font-medium group-hover:text-brand-600 transition-colors whitespace-nowrap">
-                      post@ardalshjelpen.no
+                      ardalshjelpen@gmail.com
                     </span>
                   </a>
                 </li>

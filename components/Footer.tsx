@@ -37,9 +37,9 @@ export default function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-brand-300 mb-4">Kontakt</h3>
             <ul className="flex flex-col gap-3" role="list">
               <li>
-                <a href="mailto:post@ardalshjelpen.no" className="flex items-center gap-3 text-brand-100 hover:text-white transition-colors duration-150">
+                <a href="mailto:ardalshjelpen@gmail.com" className="flex items-center gap-3 text-brand-100 hover:text-white transition-colors duration-150">
                   <EmailIcon />
-                  post@ardalshjelpen.no
+                  ardalshjelpen@gmail.com
                 </a>
               </li>
               <li>
