@@ -56,12 +56,6 @@ export default function Footer() {
           <p>Årdalshjelpen AS &mdash; Org.nr. 927 700 182</p>
           <div className="flex flex-col items-center md:items-end gap-1">
             <p>&copy; {new Date().getFullYear()} Årdalshjelpen</p>
-            <a
-              href="mailto:post@parkside.no"
-              className="text-brand-500/70 hover:text-brand-400 transition-colors duration-150 text-xs"
-            >
-              by Parkside.
-            </a>
           </div>
         </div>
       </div>
