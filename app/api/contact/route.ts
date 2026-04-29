@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { Resend } from 'resend'
 
 interface ContactPayload {
   name: string
@@ -12,10 +11,6 @@ interface ContactPayload {
   preferredDate?: string
   message?: string
 }
-
-const resend = process.env.RESEND_API_KEY
-  ? new Resend(process.env.RESEND_API_KEY)
-  : null
 
 export async function POST(req: NextRequest) {
   let body: ContactPayload
@@ -42,22 +37,38 @@ export async function POST(req: NextRequest) {
     body.message       ? `\nMelding:\n${body.message}`     : null,
   ].filter(Boolean).join('\n')
 
-  if (resend) {
-    const { error } = await resend.emails.send({
-      from: 'Årdalshjelpen <onboarding@resend.dev>',
-      to: 'ardalshjelpen@gmail.com',
-      reply_to: email ? `${name} <${email}>` : undefined,
+  const apiKey = process.env.BREVO_API_KEY
+
+  if (apiKey) {
+    const payload: Record<string, unknown> = {
+      sender: { name: 'Årdalshjelpen', email: 'noreply@ardalshjelpen.no' },
+      to: [{ email: 'post@parkside.no' }],
       subject: `Ny førespurnad – ${name}`,
-      text: lines,
+      textContent: lines,
+    }
+
+    if (email) {
+      payload.replyTo = { name, email }
+    }
+
+    const res = await fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST',
+      headers: {
+        'api-key': apiKey,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
     })
-    if (error) {
-      console.error('[ardalshjelpen] Resend-feil:', error)
+
+    if (!res.ok) {
+      const detail = await res.text()
+      console.error('[ardalshjelpen] Brevo-feil:', res.status, detail)
       return NextResponse.json({ error: 'Email failed' }, { status: 500 })
     }
   } else {
     console.warn(
-      '[ardalshjelpen] RESEND_API_KEY er ikkje konfigurert — e-post vert IKKJE sendt. ' +
-      'Set RESEND_API_KEY i .env.local eller Vercel Dashboard.'
+      '[ardalshjelpen] BREVO_API_KEY er ikkje konfigurert — e-post vert IKKJE sendt. ' +
+      'Set BREVO_API_KEY i .env.local eller Vercel Dashboard.'
     )
     console.log('=== NY KONTAKTFORESPURNAD (LOGGING BERRE) ===')
     console.log(lines)
