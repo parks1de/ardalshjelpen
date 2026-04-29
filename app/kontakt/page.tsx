@@ -22,7 +22,7 @@ export default function KontaktPage() {
 
       <section className="section" aria-label="Kontaktinformasjon">
         <div className="container-inner">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="flex flex-col gap-4 max-w-2xl mx-auto">
             <a
               href="tel:+4794078545"
               className="card border-2 border-brand-100 hover:border-brand-300 flex items-center gap-5 group transition-all duration-200 no-underline"
@@ -49,7 +49,7 @@ export default function KontaktPage() {
               </div>
               <div className="min-w-0">
                 <p className="text-sm font-bold uppercase tracking-wide text-dark/40 mb-0.5">E-post</p>
-                <p className="font-semibold text-dark group-hover:text-brand-600 transition-colors break-all">
+                <p className="font-semibold text-dark group-hover:text-brand-600 transition-colors whitespace-nowrap">
                   ardalshjelpen@gmail.com
                 </p>
               </div>
