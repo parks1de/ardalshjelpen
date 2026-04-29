@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
   if (apiKey) {
     const payload: Record<string, unknown> = {
       sender: { name: 'Årdalshjelpen', email: 'noreply@ardalshjelpen.no' },
-      to: [{ email: 'post@parkside.no' }],
+      to: [{ email: 'ardalshjelpen@gmail.com' }],
       subject: `Ny førespurnad – ${name}`,
       textContent: lines,
     }
