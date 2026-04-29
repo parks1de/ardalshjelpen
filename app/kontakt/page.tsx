@@ -24,22 +24,6 @@ export default function KontaktPage() {
         <div className="container-inner">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <a
-              href="mailto:ardalshjelpen@gmail.com"
-              className="card border-2 border-brand-100 hover:border-brand-300 flex items-center gap-5 group transition-all duration-200 no-underline"
-              aria-label="Send e-post til ardalshjelpen@gmail.com"
-            >
-              <div className="w-14 h-14 flex-shrink-0 rounded-2xl bg-brand-300 flex items-center justify-center text-white shadow group-hover:bg-brand-400 transition-colors">
-                <EmailIcon size={24} />
-              </div>
-              <div className="min-w-0">
-                <p className="text-sm font-bold uppercase tracking-wide text-dark/40 mb-0.5">E-post</p>
-                <p className="font-semibold text-dark group-hover:text-brand-600 transition-colors whitespace-nowrap">
-                  ardalshjelpen@gmail.com
-                </p>
-              </div>
-            </a>
-
-            <a
               href="tel:+4794078545"
               className="card border-2 border-brand-100 hover:border-brand-300 flex items-center gap-5 group transition-all duration-200 no-underline"
               aria-label="Ring 940 78 545"
@@ -51,6 +35,22 @@ export default function KontaktPage() {
                 <p className="text-sm font-bold uppercase tracking-wide text-dark/40 mb-0.5">Telefon</p>
                 <p className="font-semibold text-dark text-xl group-hover:text-brand-600 transition-colors">
                   940 78 545
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="mailto:ardalshjelpen@gmail.com"
+              className="card border-2 border-brand-100 hover:border-brand-300 flex items-center gap-5 group transition-all duration-200 no-underline"
+              aria-label="Send e-post til ardalshjelpen@gmail.com"
+            >
+              <div className="w-14 h-14 flex-shrink-0 rounded-2xl bg-brand-300 flex items-center justify-center text-white shadow group-hover:bg-brand-400 transition-colors">
+                <EmailIcon size={24} />
+              </div>
+              <div className="min-w-0">
+                <p className="text-sm font-bold uppercase tracking-wide text-dark/40 mb-0.5">E-post</p>
+                <p className="font-semibold text-dark group-hover:text-brand-600 transition-colors whitespace-nowrap">
+                  ardalshjelpen@gmail.com
                 </p>
               </div>
             </a>

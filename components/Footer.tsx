@@ -37,15 +37,15 @@ export default function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-brand-300 mb-4">Kontakt</h3>
             <ul className="flex flex-col gap-3" role="list">
               <li>
-                <a href="mailto:ardalshjelpen@gmail.com" className="flex items-center gap-3 text-brand-100 hover:text-white transition-colors duration-150">
-                  <EmailIcon />
-                  ardalshjelpen@gmail.com
-                </a>
-              </li>
-              <li>
                 <a href="tel:+4794078545" className="flex items-center gap-3 text-brand-100 hover:text-white transition-colors duration-150">
                   <PhoneIcon />
                   940 78 545
+                </a>
+              </li>
+              <li>
+                <a href="mailto:ardalshjelpen@gmail.com" className="flex items-center gap-3 text-brand-100 hover:text-white transition-colors duration-150">
+                  <EmailIcon />
+                  ardalshjelpen@gmail.com
                 </a>
               </li>
             </ul>
