@@ -25,20 +25,6 @@ export default function HomePage() {
               <ul className="flex flex-col gap-4" role="list">
                 <li>
                   <a
-                    href="mailto:ardalshjelpen@gmail.com"
-                    className="flex items-center gap-4 group"
-                    aria-label="Send e-post til ardalshjelpen@gmail.com"
-                  >
-                    <span className="flex-shrink-0 w-11 h-11 rounded-full bg-brand-300 flex items-center justify-center text-white shadow group-hover:bg-brand-400 transition-colors">
-                      <EmailIcon />
-                    </span>
-                    <span className="text-dark font-medium group-hover:text-brand-600 transition-colors whitespace-nowrap">
-                      ardalshjelpen@gmail.com
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="tel:+4794078545"
                     className="flex items-center gap-4 group"
                     aria-label="Ring 940 78 545"
@@ -48,6 +34,20 @@ export default function HomePage() {
                     </span>
                     <span className="text-dark font-medium text-xl group-hover:text-brand-600 transition-colors">
                       940 78 545
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:ardalshjelpen@gmail.com"
+                    className="flex items-center gap-4 group"
+                    aria-label="Send e-post til ardalshjelpen@gmail.com"
+                  >
+                    <span className="flex-shrink-0 w-11 h-11 rounded-full bg-brand-300 flex items-center justify-center text-white shadow group-hover:bg-brand-400 transition-colors">
+                      <EmailIcon />
+                    </span>
+                    <span className="text-dark font-medium group-hover:text-brand-600 transition-colors break-all">
+                      ardalshjelpen@gmail.com
                     </span>
                   </a>
                 </li>

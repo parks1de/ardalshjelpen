@@ -49,7 +49,7 @@ export default function KontaktPage() {
               </div>
               <div className="min-w-0">
                 <p className="text-sm font-bold uppercase tracking-wide text-dark/40 mb-0.5">E-post</p>
-                <p className="font-semibold text-dark group-hover:text-brand-600 transition-colors whitespace-nowrap">
+                <p className="font-semibold text-dark group-hover:text-brand-600 transition-colors break-all">
                   ardalshjelpen@gmail.com
                 </p>
               </div>
